@@ -1,0 +1,47 @@
+@page "/calculator"
+
+<h3>MyCalculator</h3>
+
+<div>
+    <div class="row">
+        <div class="col-md-3">
+            <p>Masukan Input 1</p>
+        </div>
+        <div class="col-md-4">
+            <input placeholder="Masukan Input" @bind="@input1" />
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-md-3">
+            <p>Masukan Input 2</p>
+        </div>
+        <div class="col-md-4">
+            <input placeholder="Masukan Input" @bind="@input2" />
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-md-3">
+            <p>Hasil</p>
+        </div>
+        <div class="col-md-4">
+            <input readonly @bind="@hasil" />
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-md-2">
+            <button @onclick="Penambahan" class="btn btn-Primary">Tambah (+)</button>
+        </div>
+        <div class="col-md-2">
+            <button @onclick="Pengurangan" class="btn btn-warning">Kurang (−)</button>
+        </div>
+        <div class="col-md-2">
+            <button @onclick="Perkalian" class="btn btn-secondary ">Kali (X)</button>
+        </div>
+        <div class="col-md-2">
+            <button @onclick="Pembagian" class="btn btn-dark">Bagi (/)</button>
+        </div>
+    </div>
+</div>
